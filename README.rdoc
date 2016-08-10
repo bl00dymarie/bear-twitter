@@ -10,6 +10,24 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+Due to configuration of our web app based on twitter's "Application-only authentication" (see https://dev.twitter.com/oauth/application-only), the usage of twitter is restricted.
+
+"Your app will be able to, for example:
+
+    Pull user timelines;
+    Access friends and followers of any account;
+    Access lists resources;
+    Search in tweets;
+    Retrieve any user information;
+
+And it won’t be able to:
+
+    Post tweets or other resources;
+    Connect in Streaming endpoints;
+    Search for users;
+    Use any geo endpoint;
+    Access DMs or account credentials;
+"
 
 * Database creation
 
