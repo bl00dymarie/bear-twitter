@@ -1,3 +1,35 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.twitter {
+  position: fixed; /* <- this */
+  top: 0;  /* <- this too */
+  right: 10px; /* <- this too */
+  bottom: 0; /* <- this too */
+  overflow: auto; /* <- this too */
+  width: 35%; /* <- dont forget this! */
+}
+
+.twitter-tweet {
+  padding: 10px 10px 20px;
+  background: hsl(180, 30%, 70%);
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.twitter-tweet::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.twitter-tweet-avatar {
+  display: block;
+  float: left;
+  height: 40px;
+  width: 40px;
+  background: hsl(0, 0%, 30%);
+}
+
+.twitter-tweet-content {
+  overflow: hidden;
+  padding-left: 10px;
+}
