@@ -1,0 +1,22 @@
+<div style="padding: 55px; box-sizing: border-box; background: lightblue; float: right; border: none; width: 30%;">
+  <p><h3> These are the most recent tweets</h3></p>
+
+<p>
+  <% @bear.search("to:justinbieber marry me", result_type: "recent").take(3).each do |tweet| %>
+  <p><%= tweet.text %></p>
+  <% end %>
+</p>
+
+</div>
+
+<div style="padding: 25px; box-sizing: border-box; background: pink; float: right; border: none; width: 30%;">
+  <p><a href="https://twitter.com/leapcode"> Tweets by <%= @twitter_handle%>.</a></p>
+  <p>You have this number of <a href="/followers"> <%= @followers_count%> followers.</a></p>
+</div>
+
+<div style="padding: 55px; box-sizing: border-box; background: green; float: left; border: none; width: 30%;">
+
+<h1>Ooops, you just fell into a deep rabbit hole!</h1>
+<br><p>Now, that you're here: Mind your step!</p>
+
+</div>
