@@ -1,35 +1,61 @@
-.twitter {
-  position: fixed; /* <- this */
-  top: 0;  /* <- this too */
-  right: 10px; /* <- this too */
-  bottom: 0; /* <- this too */
-  overflow: auto; /* <- this too */
-  width: 35%; /* <- dont forget this! */
+.complete {
+  padding: 10px 10px 10px;
+  height: 90%;
 }
 
-.twitter-tweet {
-  padding: 10px 10px 20px;
-  background: hsl(180, 30%, 70%);
+.leap-app {
+  position: fixed;
+  padding-right: 40%;
+  padding: 100px 100px 100px;
+  font-family: sans-serif;
+  background: pink;
+}
+
+.text {
+  position: inherit;
+  padding-right: inherit;
+  width: 800px;
+  height: 200px;
+  z-index: 15;
+  top: 35px;
+  left: 35px;
+}
+
+.newsfeed {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  overflow: auto;
+  width: 30%;
+  font-family: sans-serif;
+}
+
+.tweet-boxes {
+  padding: 10px 10px 10px;
+  background: hsl(210, 100%, 56%);
   margin-bottom: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
-.twitter-tweet::after {
+.tweet::after {
   content: '';
   display: block;
   clear: both;
   visibility: hidden;
 }
 
-.twitter-tweet-avatar {
+.tweet-avatar {
   display: block;
   float: left;
-  height: 40px;
-  width: 40px;
-  background: hsl(0, 0%, 30%);
+  background: hsl(0,0%,30%);
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
 }
 
-.twitter-tweet-content {
+//makes sure the tweet text has some space (10px) away from the picture
+.tweet-content {
   overflow: hidden;
-  padding-left: 10px;
+  padding-left: 15%;
 }

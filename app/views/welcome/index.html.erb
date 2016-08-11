@@ -1,50 +1,72 @@
-<div style="padding: 55px; box-sizing: border-box; background: lightblue; float: left; border: none; width: 30%;">
-  <p><h3> These are the most recent tweets</h3></p>
-
-<p>
-  <% @bear.search("to:justinbieber marry me", result_type: "recent").take(3).each do |tweet| %>
-  <p><%= tweet.text %></p>
-  <% end %>
-</p>
-
-
-  <div class="twitter">
-    <h2 class="twitter-header">Twitter</h2>
-    <div class="twitter-tweet">
-      <div class="twitter-tweet-avatar"></div>
-      <div class="twitter-tweet-content">Angst</div>
+<div class="complete">
+<!-- ***************************************************************************************************************************************
+ Start of Twitter feed
+*************************************************************************************************************************************** -->
+  <div class="leap-app">
+    <div class="text">
+      <h1 class="main-heading">Leap Web app</h1>
+      <p class="main-text">
+        The encryption access project "LEAP" is a non-profit dedicated to giving all internet users
+        access to secure communication. Our focus is on adapting encryption technology to make it
+        easy to use and widely available.<p><a href="https://leap.se/en/about-us"> More about LEAP.</a></p>
+      </p>
     </div>
-
-    <div class="twitter-tweet">
-      <div class="twitter-tweet-avatar"></div>
-      <div class="twitter-tweet-content">Overwhelming happiness and wonderment. The world is so great.</div>
-    </div>
-
-    <div class="twitter-tweet">
-      <div class="twitter-tweet-avatar"></div>
-      <div class="twitter-tweet-content">More Angst</div>
-    </div>
-
-    <div class="twitter-tweet">
-      <div class="twitter-tweet-avatar"></div>
-      <div class="twitter-tweet-content">Angst rage lonliness something something else something and some more angst</div>
-    </div>
-
-  </div>
   </div>
 
-  </div>
+<!-- ***************************************************************************************************************************************
+ Start of Twitter feed
+*************************************************************************************************************************************** -->
+  <div class="newsfeed">
+    <h2 class="twitter-heading">Tweets by <a href="https://twitter.com/leapcode"> @leapcode.</a></h2>
 
-</div>
+    <% @tweets.take(20).each do |tweet| %>
+      <div class="tweet-boxes">
+        <div class="tweet-avatar"></div>
+        <!-- <img id="tweets_pic" src="assets/team-loadtocode-Loading_icon.gif"></img> -->
+          <!-- <p><%= image_tag("team-loadtocode-Loading_icon.gif", height: '40px', width: '40px') %></p> -->
+          <div class="tweet-content">
+            <p><%= tweet.text %></p>
+          </div>
+      </div>
+    <% end %>
+
+    <!-- <p><% @tweets.take(20).each do |tweet| %>
+      <div class="tweet-boxes">
+        <div class="tweet-avatar"><p><%= image_tag("retweet.png", height: '40px', width: '40px') %></p>
+          <div class="tweet-content">
+          <p><%= tweet.text %></p>
+          <% end %></p>
+        </div>
+      </div>
+    </div> -->
 <!--
-<div style="padding: 25px; box-sizing: border-box; background: pink; float: right; border: none; width: 30%;">
-  <p><a href="https://twitter.com/leapcode"> Tweets by Team Load to Code<%= @twitter_handle%>.</a></p>
-  <p>You have this number of <a href="/followers"> <%= @followers_count%> followers.</a></p>
+    <div class="tweet-boxes">
+      <div class="tweet-avatar"><p><%= image_tag("team-loadtocode-Loading_icon.gif", height: '40px', width: '40px') %></p></div>
+      <div class="tweet-content">
+        <% @tweets.take(1).each do |t| %>
+          <%= t.text %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="tweet-boxes">
+      <div class="tweet-avatar"><p><%= image_tag("team-loadtocode-favourite-colleague.jpg", height: '40px', width: '40px') %></p></div>
+      <div class="tweet-content">
+        <% @tweets.take(1).each do |t| %>
+          <%= t.text %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="tweet-boxes">
+      <div class="tweet-avatar"></div>
+      <div class="tweet-content">
+        <% @tweets.take(1).each do |t| %>
+          <%= t.text %>
+        <% end %>
+      </div>
+    </div> -->
+
+  </div>
+
 </div>
-
-<div style="padding: 55px; box-sizing: border-box; background: green; float: left; border: none; width: 30%;">
-
-<h1>Ooops, you just fell into a deep rabbit hole!</h1>
-<br><p>Now, that you're here: Mind your step!</p>
-
-</div> -->

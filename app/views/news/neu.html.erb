@@ -1,17 +1,19 @@
 <h1>Ooops, that escalated quickly!</h1>
 
-<%= form_for :article do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
+<h2>Listing Tweets</h2>
 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
 
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<div class="twitter">
+  <div class="twitter-tweet">
+    <div class="twitter-tweet::after">
+      <div class="twitter-tweet-avatar">
+        <div class="twitter-tweet-content">
+          <!-- <p>
+            <% @tweets.take(13).each do |tweet| %>
+            <p><%= tweet.text %></p>
+            <% end %>
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </div>

@@ -12,5 +12,7 @@ class WelcomeController < ApplicationController
 
     # @bear = bearclient.get_all_tweets("")
     @bear = bearclient
+    @tweets = bearclient.user_timeline("loadtocode")
+    
   end
 end
