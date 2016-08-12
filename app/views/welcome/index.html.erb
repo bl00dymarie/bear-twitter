@@ -2,14 +2,15 @@
 <!-- ***************************************************************************************************************************************
  Start of Twitter feed
 *************************************************************************************************************************************** -->
-  <div class="leap-app">
-    <div class="text">
-      <h1 class="main-heading">Leap Web app</h1>
-      <p class="main-text">
-        The encryption access project "LEAP" is a non-profit dedicated to giving all internet users
-        access to secure communication. Our focus is on adapting encryption technology to make it
-        easy to use and widely available.<p><a href="https://leap.se/en/about-us"> More about LEAP.</a></p>
-      </p>
+  <div class="left-box">
+    <div class="leap-app">
+        <h1 class="main-heading">Leap Web app</h1>
+        <div class="leap-icon"></div>
+        <p class="main-text">
+          The encryption access project "LEAP" is a non-profit dedicated to giving all internet users
+          access to secure communication. Our focus is on adapting encryption technology to make it
+          easy to use and widely available.<p><a href="https://leap.se/en/about-us"> More about LEAP.</a></p>
+        </p>
     </div>
   </div>
 
@@ -21,9 +22,9 @@
 
     <% @tweets.take(20).each do |tweet| %>
       <div class="tweet-boxes">
-        <div class="tweet-avatar"></div>
-        <!-- <img id="tweets_pic" src="assets/team-loadtocode-Loading_icon.gif"></img> -->
           <!-- <p><%= image_tag("team-loadtocode-Loading_icon.gif", height: '40px', width: '40px') %></p> -->
+        <!-- <div class="tweet-avatar"><img id="tweets_pic" src="assets/team-loadtocode-Loading_icon.gif"></div> -->
+        <div class="tweet-avatar"></div>
           <div class="tweet-content">
             <p><%= tweet.text %></p>
           </div>
