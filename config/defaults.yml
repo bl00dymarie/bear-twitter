@@ -1,0 +1,15 @@
+# The configuration is based on twitter's “Application-only authentication” (see dev.twitter.com/oauth/application-only).
+
+development:
+  secret_key_base: Rails.application.secrets['development'][secret_key_base]
+
+  twitter:
+    consumer_key    : Change_to_your_consumer_key
+    consumer_secret : Change_to_your_consumer_secret
+    bearer_token    : Change_to_your_bearer_token
+
+test:
+  secret_key_base: Rails.application.secrets['test']['secret_key_base']
+
+production:
+  secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
