@@ -1,4 +1,4 @@
-# The configuration is based on twitter's “Application-only authentication” (see dev.twitter.com/oauth/application-only).
+#The configuration is based on twitter's “Application-only authentication” (see dev.twitter.com/oauth/application-only).
 
 development:
   secret_key_base: Rails.application.secrets['development'][secret_key_base]

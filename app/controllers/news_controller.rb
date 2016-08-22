@@ -1,7 +1,8 @@
 class NewsController < ApplicationController
 
-  def neu
-    @tweets = bearclient.user_timeline("loadtocode")
-  end
+  def index
+    @followers_count = twitter_client.user.followers_count
+    @connections = twitter_client.followers
 
+  end
 end

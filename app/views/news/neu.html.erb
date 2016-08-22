@@ -1,19 +1,21 @@
-<h1>Ooops, that escalated quickly!</h1>
+<div style="padding: 25px; box-sizing: border-box; background: grey; float: left; border: none; width: 45%;">
 
-<h2>Listing Tweets</h2>
+  <h1>Yeah you have <%=@followers_count%> followers </h1>
+  <p>Find me in app/views/followers/index.html.erb</p>
+  <p><a href="/">Go back </a> to where you come from.</p>
 
+</div>
 
-<div class="twitter">
-  <div class="twitter-tweet">
-    <div class="twitter-tweet::after">
-      <div class="twitter-tweet-avatar">
-        <div class="twitter-tweet-content">
-          <!-- <p>
-            <% @tweets.take(13).each do |tweet| %>
-            <p><%= tweet.text %></p>
-            <% end %>
-          </p> -->
-        </div>
-      </div>
-    </div>
-  </div>
+<div style="padding: 25px; box-sizing: border-box; background: orange; float: right; border: none; width: 45%;">
+
+  <h1>Here are your connections:</h1>
+
+  <p>
+    <p><% @connections.each do |c| %>
+      <p><h5> <%= c.screen_name %></h5></p><br>
+      <p>_______________________________________</p>
+    <% end %>
+  </p>
+</p>
+
+</div>

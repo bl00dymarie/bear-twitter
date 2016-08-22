@@ -1,6 +1,6 @@
 <div class="complete">
 <!-- ***************************************************************************************************************************************
- Start of Twitter feed
+ Start of left box for twitter Leap feed
 *************************************************************************************************************************************** -->
   <div class="left-box">
     <div class="leap-app">
@@ -20,12 +20,14 @@
   <div class="newsfeed">
     <h2 class="twitter-heading">Tweets by <a href="https://twitter.com/leapcode"> @leapcode.</a></h2>
 
+
     <% @tweets.take(20).each do |tweet| %>
       <div class="tweet-boxes">
           <!-- <p><%= image_tag("team-loadtocode-Loading_icon.gif", height: '40px', width: '40px') %></p> -->
         <!-- <div class="tweet-avatar"><img id="tweets_pic" src="assets/team-loadtocode-Loading_icon.gif"></div> -->
         <div class="tweet-avatar"></div>
           <div class="tweet-content">
+            <p><%= %></p>
             <p><%= tweet.text %></p>
           </div>
       </div>
